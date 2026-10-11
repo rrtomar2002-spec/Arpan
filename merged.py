@@ -1496,12 +1496,13 @@ def api_status():
 
 # ═══════════════════ MAIN ═══════════════════
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5001))
     print(f"{C.GRN}{C.BOLD}")
     print("╔══════════════════════════════════════════════════════╗")
     print("║  ✨ MAGICPIN — FINAL v13 (ROTATING PROXY + DIRECT FB)║")
     print("╚══════════════════════════════════════════════════════╝")
     print(f"{C.RESET}")
-    print(f"  UI       : http://localhost:5001")
+    print(f"  UI       : http://0.0.0.0:{port}")
     print(f"  TG       : {TG_CHAT}")
     print(f"  Proxy    : {'ON (arealproxy rotating IN)' if PROXY_ENABLED else 'OFF'}")
     print(f"  Firebase : DIRECT (no proxy)")
@@ -1511,4 +1512,4 @@ if __name__ == "__main__":
     print(f"  Ledger   : top 5 BOUGHT txns tried")
     print(f"  Vch Retry: {VOUCHER_CODE_RETRIES} x {VOUCHER_CODE_GAP}s")
     print()
-    app.run(host="0.0.0.0", port=5001, threaded=True)
+    app.run(host="0.0.0.0", port=port, threaded=True)
