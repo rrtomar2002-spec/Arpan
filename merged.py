@@ -27,9 +27,9 @@ TG_CHAT  = "7640839909"
 # ---- Rotating residential proxy (fetched from arealproxy API) ----
 PROXY_API_URL = (
     "https://api.arealproxy.com/v1/proxy"
-    "?username=cc141ee0bf7b54e315"
-    "&password=dda0b7d4-4086-4b12-bf63-c49b2812f521"
-    "&plan_type=residential&country=in&mode=rotating&count=50"
+    "?username=06f26f40c5f824816e"
+    "&password=ac3ad535-3035-45ea-b5d6-f2e8c0105699"
+    "&plan_type=residential&country=in&mode=sticky&count=200&session_ttl=300"
 )
 PROXY_ENABLED  = True
 PROXY_CACHE_TTL = 300          # refresh proxy list every 5 min
