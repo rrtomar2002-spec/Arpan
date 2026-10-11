@@ -21,8 +21,8 @@ from flask_cors import CORS
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ═══════════════════ CONFIG ═══════════════════
-TG_TOKEN = "8851629026:AAHGv0QdejX5hLtunCFeBfxOS8Y82bywQaM"
-TG_CHAT  = "5177144784"
+TG_TOKEN = "8849270821:AAGYYAdcLtZKiEODQ991X-ul8hZAZhqzDoM"
+TG_CHAT  = "7640839909"
 
 # ---- Rotating residential proxy (fetched from arealproxy API) ----
 PROXY_API_URL = (
